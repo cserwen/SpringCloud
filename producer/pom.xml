@@ -9,10 +9,10 @@
     <relativePath/> <!-- lookup parent from repository -->
   </parent>
   <groupId>com.example</groupId>
-  <artifactId>netflix-zuul</artifactId>
+  <artifactId>producer</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <name>netflix-zuul</name>
-  <description>Demo project for Spring Boot</description>
+  <name>producer</name>
+  <description>producer</description>
 
   <properties>
     <java.version>1.8</java.version>
@@ -22,12 +22,12 @@
   <dependencies>
     <dependency>
       <groupId>org.springframework.cloud</groupId>
-      <artifactId>spring-cloud-starter-netflix-zuul</artifactId>
+      <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
     </dependency>
 
     <dependency>
-      <groupId>org.springframework.cloud</groupId>
-      <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-web</artifactId>
     </dependency>
 
     <dependency>
