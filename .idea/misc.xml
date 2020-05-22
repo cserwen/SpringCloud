@@ -6,6 +6,9 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/netflix-eureka-server/pom.xml" />
+        <option value="$PROJECT_DIR$/netflix-zuul/pom.xml" />
+        <option value="$PROJECT_DIR$/config/pom.xml" />
+        <option value="$PROJECT_DIR$/netflix-eureka-client/pom.xml" />
       </list>
     </option>
   </component>
