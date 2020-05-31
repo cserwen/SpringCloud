@@ -10,18 +10,13 @@ import org.springframework.web.client.RestTemplate;
 @RestController
 public class ConsumerController {
 
-    @Bean
-    public RestTemplate restTemplate(){
-        return  new RestTemplate();
-    }
-
-    @Autowired
-    private RestTemplate restTemplate;
+    @Autowired(required = false)
+    private FeignClientService feignClientService;
 
     @RequestMapping("/api/v1/demo/get")
     public String consumer(){
 //       　交给消费者处理
-        return this.restTemplate.getForObject("http://localhost:5060/producer/demo", String.class);
+        return feignClientService.consumer();
     }
 
 }
