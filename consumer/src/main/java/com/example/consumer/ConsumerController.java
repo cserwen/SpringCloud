@@ -17,7 +17,7 @@ public class ConsumerController {
     @HystrixCommand(fallbackMethod = "executeHystrixHandle")
     @RequestMapping("/api/v1/demo/get")
     public String consumer(){
-//       　交给消费者处理
+        //交给消费者处理
         return feignClientService.consumer();
     }
 
